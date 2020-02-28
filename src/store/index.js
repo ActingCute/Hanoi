@@ -7,7 +7,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    headerTips: 'hello',
+    headerTips: '规则',
     input: '',
   },
   actions,

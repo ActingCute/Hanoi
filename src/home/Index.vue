@@ -4,7 +4,6 @@
     <web>
       <game></game>
     </web>
-    <Footer></Footer>
   </div>
 </template>
 
@@ -36,27 +35,16 @@
       } else {
         console.log('I am in Web')
       }
-      this.min_setup = 0;
+
     },
     mounted: function () {
-      this.hanoi(3, "A", "B", "C");
+
     },
     data() {
-      return {
-        min_setup: 0,
-      }
+      return {}
     },
     methods: {
-      hanoi(n, a, b, c) {
-        this.min_setup++;
-        if (n == 1) {
-          console.log("Move " + n + " from " + a + " to " + c);
-        } else {
-          this.hanoi(n - 1, a, c, b);
-          console.log("Move " + n + " from " + a + " to " + c)
-          this.hanoi(n - 1, b, a, c);
-        }
-      }
+
     },
   })
 </script>
